@@ -3,7 +3,7 @@
 package poppler
 
 /*
-#cgo pkg-config: --cflags-only-I poppler-glib
+#cgo pkg-config: poppler-glib
 #include <stdio.h>
 #include <stdlib.h>
 #include <poppler.h>
@@ -21,14 +21,14 @@ const (
 	ErrorDamaged          = C.POPPLER_ERROR_DAMAGED     // Document is damaged
 )
 
-type Orientation int
+// type Orientation int
 
-const (
-	OrientationPortrait   Orientation = C.POPPLER_ORIENTATION_PORTRAIT
-	OrientationLandscape              = C.POPPLER_ORIENTATION_LANDSCAPE
-	OrientationUpsidedown             = C.POPPLER_ORIENTATION_UPSIDEDOWN
-	OrientationSeascape               = C.POPPLER_ORIENTATION_SEASCAPE
-)
+// const (
+// 	OrientationPortrait   Orientation = C.POPPLER_ORIENTATION_PORTRAIT
+// 	OrientationLandscape              = C.POPPLER_ORIENTATION_LANDSCAPE
+// 	OrientationUpsidedown             = C.POPPLER_ORIENTATION_UPSIDEDOWN
+// 	OrientationSeascape               = C.POPPLER_ORIENTATION_SEASCAPE
+// )
 
 // PageTransition types
 type PageTransition int
